@@ -19,7 +19,7 @@ async def on_ready():
 
 @tasks.loop(seconds=10)
 async def change_status():
-    status = ["felis i lubyu"]
+    status = ["watching people use me"]
     await client.change_presence(activity=discord.Game(choice(status)))
     
     
